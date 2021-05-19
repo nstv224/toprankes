@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AgGridColumn, AgGridReact } from "ag-grid-react";
 import "ag-grid-community/dist/styles/ag-grid.css";
 import "ag-grid-community/dist/styles/ag-theme-alpine.css";
-
+import DatePicker from 'react-date-picker';
 import { city } from "../util/cities";
 import deleteIconPng from "../image/trash.png";
 import Submited from "./Submited";
@@ -15,30 +15,30 @@ const Main = () => {
   const [rowData, setRowData] = useState([
     {
       id: "1",
-      name: "Celica",
-      email: "abc@gmail.com",
-      gender: "Male",
-      dob: "12-01-2020",
-      country: "India",
-      city: "Nagpur",
+      name: "Janie",
+      email: "jclampton0@over-blog.com",
+      gender: "Female",
+      dob: "03-07-1998",
+      country: "Indonesia",
+      city: "Klatakan",
     },
     {
       id: "2",
-      name: "Mondeo",
-      email: "abc@gmail.com",
-      gender: "Male",
-      dob: "12-01-2020",
-      country: "India",
-      city: "Nagpur",
+      name: "Kassie",
+      email: "ksimonyi1@slashdot.org",
+      gender: "Female",
+      dob: "24-12-1987",
+      country: "Russia",
+      city: "Sasovo",
     },
     {
       id: "3",
-      name: "Boxter",
-      email: "abc@gmail.com",
+      name: "Homerus",
+      email: "hivanenkov2@163.com",
       gender: "Male",
-      dob: "12-01-2020",
-      country: "India",
-      city: "Nagpur",
+      dob: "14-01-1990",
+      country: "Ukraine",
+      city: "Leviv",
     },
   ]);
 
@@ -176,10 +176,10 @@ const Main = () => {
       id: "",
       name: "",
       email: "",
-      gender: "Male",
-      dob: "12-01-2020",
-      country: "India",
-      city: "Nagpur",
+      gender: "",
+      dob: "",
+      country: "",
+      city: "",
     };
 
     let res = gridApi.applyTransaction({
